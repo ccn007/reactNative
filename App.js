@@ -1,20 +1,22 @@
-import { StatusBar } from 'expo-status-bar';
-import { StyleSheet, Text, View } from 'react-native';
+import { StyleSheet, Text, View } from 'react-native'
+import React from 'react'
+import FlatList_HeaderFooter from './components/FlatList_HeaderFooter'
 
-export default function App() {
+
+const App = () => {
   return (
     <View style={styles.container}>
-      <Text>"Welcome to React Application"</Text>
-      <StatusBar style="auto" />
+        <FlatList_HeaderFooter/>
     </View>
-  );
+  )
 }
 
+export default App
+
 const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    backgroundColor: '#fff',
-    alignItems: 'center',
-    justifyContent: 'center',
-  },
-});
+  container:{
+    flex:1,   
+    justifyContent:'center',    
+    alignItems:'left'   
+ }
+})
