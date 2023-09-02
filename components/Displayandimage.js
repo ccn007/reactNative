@@ -1,14 +1,38 @@
-import { StyleSheet, Text, View } from "react-native";
-import React from "react";
+import { StyleSheet, Text, View, Image } from 'react-native'
 
-const Displayandimage = () => {
+import React from 'react'
+
+const DisplayandImage = () => {
   return (
-    <View>
-      <Text>Displayandimage</Text>
+    <View style = {styles.container}>
+      <Image
+      source={require('../assets/react_logo.png')} 
+      style = {styles.tinyLogo}
+      />
+      <Image
+      source={{uri:'https://reactnative.dev/img/tiny_logo.png'}} 
+      style = {styles.tinyLogo}
+      />
     </View>
-  );
-};
+    
+  )
+}
 
-export default Displayandimage;
+const styles = StyleSheet.create({
+  container: {
+    flex: 1,
+    paddingTop: 50,
+  },
+  tinyLogo: {
+    width: 50,
+    height: 50,
+  },
+  logo: {
+    width: 66,
+    height: 58,
+  },
 
-const styles = StyleSheet.create({});
+})
+
+
+export default DisplayandImage;
