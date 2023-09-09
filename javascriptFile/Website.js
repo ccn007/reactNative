@@ -1,6 +1,6 @@
-const SITE_NAME = "Information Technology";
-const BASE_URL = "http://it.tni.ac.th";
-const COLOR_THEME = "blue";
+const SITE_NAME    = "Information Technology";
+const BASE_URL     = "http://it.tni.ac.th";
+const COLOR_THEME  = "blue";
 const ALLOW_SIGNUP = true;
 
 console.log("Welcome to " + SITE_NAME);

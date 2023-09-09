@@ -30,7 +30,7 @@ const EmptyListMessage = ({item}) => {
     )
 }
 
-const FlatList_HeaderFooter = () => {
+const Flatlist_HeaderFooter = () => {
 
     const[listItems, setListItems] = useState(dummyArray);
 
@@ -51,7 +51,7 @@ const FlatList_HeaderFooter = () => {
         );
     };
 
-    const ItemSeparatorView = () => {
+    const ItemSeperatorView = () => {
         return (
             //FlatList Item Seperator
             <View
@@ -98,7 +98,7 @@ const FlatList_HeaderFooter = () => {
                 <View style ={styles.textStyle}>
                     <FlatList 
                     data={listItems}
-                    ItemSeparatorComponent={ItemSeparatorView}
+                    ItemSeparatorComponent={ItemSeperatorView}
                     renderItem={itemView}
                     keyExtractor={(item) =>item.id.toString()}
                     ListHeaderComponent={ListHeader}

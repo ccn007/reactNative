@@ -60,7 +60,7 @@ const FlatList_Example1 = () => {
     };
 
     const getItem = (item) => {
-        /*Fucntion for click on item*/
+        //Fucntion for click on item
         alert('Id: ' + item.id + ' Value: ' + item.value);
 
     }

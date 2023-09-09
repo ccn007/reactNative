@@ -1,4 +1,10 @@
-import {StyleSheet, Text, View, TouchableHighlight, TouchableOpacity} from 'react-native'
+import {
+    StyleSheet,
+    Text,
+    View,
+    TouchableHighlight,
+    TouchableOpacity
+} from 'react-native'
 import React, {useState} from 'react'
 
 const TouchableExample  = () => {
@@ -40,7 +46,7 @@ const styles = StyleSheet.create({
     container: {
         flex: 1,
         justifyContent: 'center',
-        paddingHorizontal: 10,s
+        paddingHorizontal: 10,
     },
     button: {
         alignItems: 'center',
